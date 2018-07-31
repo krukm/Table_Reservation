@@ -11,6 +11,16 @@ body {
     align-items: center;
 }
 
+.display_reserved {
+    background-color: #ccc;
+    border: 1px solid #ADAAAA;
+    position: absolute;
+    top: -1em;
+    left: 2em;
+    width: 10em;
+    z-index: 1;
+}
+
 .header {
     font-family: 'Rubik', sans-serif;
     margin: 2.5em;
@@ -45,6 +55,10 @@ h1 {
     cursor: pointer;
 }
 
+.availible:hover {
+    background-color: #ccc;
+}
+
 .reserved {
     border-radius: 50%;
     background-color: #ADAAAA;
@@ -57,6 +71,7 @@ h1 {
     justify-content: center;
     align-items: center;
     cursor: not-allowed;
+    position: relative;
 }
 
 .modal_form {
