@@ -21,6 +21,7 @@ $(document).ready (() => {
             reservationList.push(new Reservation($("#name").val(), $("#phone").val(), $("#no_guests").val(), currentTable.text()));
             currentTable.toggleClass("availible reserved");
         }
+        document.getElementById("seat_form").reset();
     });
 
     $(document).on("mouseenter", ".tables .reserved", (e) => {
